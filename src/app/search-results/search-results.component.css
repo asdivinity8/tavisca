@@ -1,0 +1,39 @@
+.product-card {
+    width: 30%;
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 1px 3px 5px 0 rgba(0,0,0,0.1);
+}
+
+.product-card .top-section {
+    height: 250px;
+}
+
+.product-card .top-section img {
+    width: 100%
+}
+
+.product-card .middle-section {
+    padding: 30px;
+}
+
+.product-card .middle-section h2 {
+    margin-bottom: 0;
+    font-family:'Georgia','Times New Roman','Times','serif';
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.product-card .middle-section p,
+.product-card .bottom-section p {
+    margin-top: 10px;
+    font-family:'Arial','Helvetica','sans-serif';
+    font-size: 18pxpx;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.product-card .bottom-section {
+    padding: 0 30px 30px;
+}

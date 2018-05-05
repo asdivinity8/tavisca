@@ -1,0 +1,41 @@
+<div class="search">
+  <h2>Find hotels....</h2>
+  <form>
+    <div class="form-group">
+        <label for="searchLocation">Location</label>
+        <input type="text" [(ngModel)]="search.location" name="location" id="searchLocation" required aria-required="true" #location="ngModel">
+        <div *ngIf = "location.errors && (location.touched || location.dirty)" class="alert alert-danger">
+            <div class="errors" [hidden]="!location.errors.required">
+              Location is required !
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="searchDate">Date of travel</label>
+        <input type="date" [(ngModel)]="search.date" name="date" id="searchDate" required aria-required="true" #date="ngModel">
+        <div *ngIf = "date.errors && (date.touched || date.dirty)" class="alert alert-danger">
+            <div class="errors" [hidden]="!date.errors.required">
+              Date is required !
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="guests">Guests</label>
+        <select [(ngModel)]="search.guest" name="guest" id="guests" required aria-required="true" #guest="ngModel">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+        <div *ngIf = "guest.errors && (guest.touched || guest.dirty)" class="alert alert-danger">
+            <div class="errors" [hidden]="!guest.errors.required">
+              Guest is required !
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <input type="button" class="search-btn" value="Search" (click)="showHotels(search)">
+  </form>
+</div>

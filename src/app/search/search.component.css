@@ -1,0 +1,66 @@
+.search{
+    background: #000099 url("../../assets/images/travel.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 50px;
+}
+
+.search h2 {
+    font-family:'Georgia','Times New Roman','Times','serif';
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:#fff;
+}
+
+.search .form-group {
+    display: inline-block;
+}
+
+.search .form-group .errors {
+    display: inline;
+    color: red;
+}
+
+.search label {
+    display: block;
+    font-family:'Georgia','Times New Roman','Times','serif';
+    font-size: 16px;
+    line-height: 18px;
+    color:#fff;
+    padding-left: 10px;
+}
+
+.search input, .search select {
+    min-width: 250px;
+    width: auto;
+    height: 40px;
+    padding: 8px 12px;
+    margin: 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family:'Georgia','Times New Roman','Times','serif';
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+
+.search select {
+    height: 59px;
+}
+
+.search input.search-btn{
+    min-width: 40px;
+    width: auto;
+    height: 58px;
+    padding: 8px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #CC0000;
+    color: #fff;
+    box-shadow: rgba(0,0,0,0.2) 0 1px 1px 0;
+}
