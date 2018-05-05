@@ -1,6 +1,6 @@
 <div class="search">
   <h2>Find hotels....</h2>
-  <form>
+  <form role="search">
     <div class="form-group">
         <label for="searchLocation">Location</label>
         <input type="text" [(ngModel)]="search.location" name="location" id="searchLocation" required aria-required="true" #location="ngModel">
@@ -32,10 +32,7 @@
               Guest is required !
             </div>
         </div>
-    </div>
-    
-    
-    
-    <input type="button" class="search-btn" value="Search" (click)="showHotels(search)">
+    </div>    
+    <input type="button" class="search-btn" value="Search" (click)="showHotels(search)" role= "button">
   </form>
 </div>

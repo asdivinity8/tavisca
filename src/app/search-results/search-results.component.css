@@ -1,12 +1,12 @@
 .product-card {
-    width: 30%;
+    width: auto;
     max-width: 500px;
-    margin: 40px auto;
+    margin: 30px 10px;
     box-shadow: 1px 3px 5px 0 rgba(0,0,0,0.1);
 }
 
 .product-card .top-section {
-    height: 250px;
+    max-height: 250px;
 }
 
 .product-card .top-section img {
@@ -36,4 +36,12 @@
 
 .product-card .bottom-section {
     padding: 0 30px 30px;
+}
+
+@media screen and (min-width: 768px){
+    .product-card {
+        width: 30%;
+        max-width: 500px;  
+        margin: 40px auto;    
+    }
 }
